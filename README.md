@@ -2,7 +2,7 @@
 
 A central GitHub Pages site hosting **privacy policies** and **terms of service** for all Devior applications.
 
-🔗 **Live site:** [https://your-username.github.io/legal-docs/](https://your-username.github.io/legal-docs/)
+🔗 **Live site:** [https://odilhon85.github.io/legal-docs/](https://odilhon85.github.io/legal-docs/)
 
 ---
 
@@ -77,4 +77,4 @@ The landing page will automatically show the new card. Done!
 
 - **Developer:** Devior
 - **Email:** odilhon1985@gmail.com
-- **Website:** [devior.uz](https://devior.uz)
+- **Telegram:** [@devioruz](https://t.me/devioruz)
