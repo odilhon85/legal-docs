@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MAP - Muslim Audio Player</title>
+  <meta name="description" content="Privacy Policy for MAP — Muslim Audio Player by Devior.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="page-nav container">
+    <a href="../index.html" class="page-nav__back">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      All Projects
+    </a>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <header class="page-hero container">
+    <span class="page-hero__badge" style="background:#1B5E20;">🎵 MAP</span>
+    <h1 class="page-hero__title">Privacy Policy</h1>
+    <p class="page-hero__project">MAP — Muslim Audio Player</p>
+    <p class="page-hero__effective">
+      <strong>Effective:</strong> February 24, 2026 &nbsp;&middot;&nbsp; <strong>Last Updated:</strong> February 24, 2026
+    </p>
+  </header>
+
+  <!-- ─── Document Content ─── -->
+  <article class="document">
+
+    <div class="highlight">
+      <strong>Summary:</strong> MAP is an offline-first Islamic audio player. We do <strong>not</strong> require account creation, do <strong>not</strong> collect personal information such as your name or email, and do <strong>not</strong> sell any data to third parties. The limited data we collect (crash reports and anonymous usage analytics) is used solely to improve app stability and performance.
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy describes how <strong>Devior</strong> ("we", "us", or "our") handles information in connection with the <strong>MAP — Muslim Audio Player</strong> mobile application (the "App"), available on Google Play (package name: <code>uz.devior.playnidaa</code>).</p>
+    <p>By installing or using the App you agree to the practices described in this policy. If you do not agree, please do not use the App.</p>
+
+    <h2>2. Information We Do NOT Collect</h2>
+    <ul>
+      <li><strong>No account or registration</strong> — the App does not require sign-up, login, or any personal identification.</li>
+      <li><strong>No name, email, or phone number</strong> — we never ask for or store personal contact details.</li>
+      <li><strong>No location data</strong> — the App does not access GPS or network-based location.</li>
+      <li><strong>No camera or microphone recordings</strong> — the RECORD_AUDIO permission is used exclusively for the real-time audio visualizer feature and is never recorded, stored, or transmitted.</li>
+      <li><strong>No browsing history or contacts</strong> — the App does not access your browser, contacts, calendar, or messages.</li>
+    </ul>
+
+    <h2>3. Information We Collect</h2>
+    <p>The App collects only the minimum information necessary to function properly and to improve your experience:</p>
+
+    <h3>3.1 Device and App Information (Automatic)</h3>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Purpose</th><th>Service</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Crash logs, stack traces, device model, OS version, app version</td>
+          <td>Identify and fix crashes</td>
+          <td>Firebase Crashlytics</td>
+        </tr>
+        <tr>
+          <td>Anonymous usage events (e.g., screens viewed, features used), session duration, device type</td>
+          <td>Understand how the App is used so we can improve it</td>
+          <td>Firebase Analytics</td>
+        </tr>
+        <tr>
+          <td>Firebase Cloud Messaging token</td>
+          <td>Deliver important notifications (e.g., updates, new content)</td>
+          <td>Firebase Cloud Messaging</td>
+        </tr>
+        <tr>
+          <td>Remote configuration parameters</td>
+          <td>Enable or adjust features remotely without requiring an app update</td>
+          <td>Firebase Remote Config</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>All data above is collected and processed by <strong>Google Firebase</strong> under <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. Firebase may use instance identifiers which are not linked to your personal identity.</p>
+
+    <h3>3.2 Purchase Information</h3>
+    <p>If you choose to purchase the premium upgrade, the transaction is processed entirely by <strong>Google Play Billing</strong>. We receive a purchase token and order ID to verify and grant your premium status. We do <strong>not</strong> receive or store your payment card details, billing address, or Google account email. Please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for how Google handles payment data.</p>
+
+    <h3>3.3 Local Device Data</h3>
+    <p>The App accesses audio files stored on your device to display and play them. This data:</p>
+    <ul>
+      <li>Is read <strong>locally only</strong> using the Android MediaStore API.</li>
+      <li>Is <strong>never uploaded</strong> to any server.</li>
+      <li>Includes metadata such as title, artist, album, duration, and file path — used solely for the music library interface.</li>
+    </ul>
+    <p>Your playlists, favorites, equalizer presets, and app preferences are stored <strong>locally on your device</strong> using an on-device database and are never transmitted.</p>
+
+    <h2>4. Permissions Explained</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why We Need It</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE</td><td>Scan and play audio files stored on your device</td></tr>
+        <tr><td>INTERNET / ACCESS_NETWORK_STATE</td><td>Stream online Quran radio stations; communicate with Firebase services</td></tr>
+        <tr><td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>Continue audio playback when the App is in the background</td></tr>
+        <tr><td>POST_NOTIFICATIONS</td><td>Show playback controls in the notification bar; deliver push notifications</td></tr>
+        <tr><td>WAKE_LOCK</td><td>Prevent the device CPU from sleeping during audio playback</td></tr>
+        <tr><td>MODIFY_AUDIO_SETTINGS</td><td>Power the built-in equalizer feature</td></tr>
+        <tr><td>RECORD_AUDIO</td><td>Capture real-time audio output for the visualizer effect — audio is <strong>never recorded or stored</strong></td></tr>
+        <tr><td>BLUETOOTH / BLUETOOTH_CONNECT</td><td>Detect Bluetooth audio devices for playback</td></tr>
+        <tr><td>BILLING</td><td>Process in-app purchases through Google Play</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Third-Party Services</h2>
+    <p>The App integrates the following third-party services, each governed by their own privacy policies:</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Cloud Messaging, Remote Config, In-App Messaging) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></li>
+      <li><strong>Google Play Billing</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    </ul>
+    <p>We do <strong>not</strong> integrate any third-party advertising SDKs, social media trackers, or data brokers.</p>
+
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li><strong>Firebase Analytics &amp; Crashlytics data:</strong> Retained by Google according to their standard retention policies (typically up to 14 months for Analytics, 90 days for Crashlytics).</li>
+      <li><strong>Local data</strong> (playlists, settings, preferences): Stored on your device until you clear the App's data or uninstall it.</li>
+      <li><strong>Purchase records:</strong> Managed by Google Play; we retain only the purchase verification token for premium status validation.</li>
+    </ul>
+
+    <h2>7. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or trade your information to any third party.</p>
+    <p>Anonymous, aggregated crash and analytics data is processed by Google Firebase as described above. No personally identifiable information is shared.</p>
+
+    <h2>8. Data Security</h2>
+    <p>We take reasonable measures to protect the information associated with the App:</p>
+    <ul>
+      <li>All network communication uses HTTPS/TLS encryption.</li>
+      <li>Local data is stored in the App's private storage, protected by the Android operating system's sandboxing.</li>
+      <li>We do not maintain any external servers or databases that store user data.</li>
+    </ul>
+
+    <h2>9. Children's Privacy</h2>
+    <p>The App is not specifically directed at children under the age of 13. We do not knowingly collect personal information from children. Since the App does not require account creation and does not collect personal data, there is minimal risk. If you believe a child has somehow provided personal information through the App, please contact us and we will take steps to remove it.</p>
+
+    <h2>10. Your Rights and Choices</h2>
+    <ul>
+      <li><strong>Opt out of Analytics:</strong> You can limit ad tracking and analytics collection through your device's privacy settings (Settings &gt; Google &gt; Ads on Android).</li>
+      <li><strong>Revoke permissions:</strong> You can revoke any permission at any time through your device's Settings &gt; Apps &gt; MAP &gt; Permissions.</li>
+      <li><strong>Delete local data:</strong> Clear the App's data or uninstall it to remove all locally stored information.</li>
+      <li><strong>Request data deletion:</strong> Contact us at the email below to request deletion of any data associated with your device.</li>
+    </ul>
+
+    <h2>11. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:odilhon1985@gmail.com">odilhon1985@gmail.com</a></li>
+      <li><strong>Developer:</strong> Devior</li>
+      <li><strong>Website:</strong> <a href="https://devior.uz" target="_blank" rel="noopener">devior.uz</a></li>
+    </ul>
+
+  </article>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Devior. All rights reserved. &nbsp;&middot;&nbsp;
+    <a href="terms.html">Terms of Service</a> &nbsp;&middot;&nbsp;
+    <a href="../index.html">All Projects</a>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
