@@ -1,6 +1,6 @@
-# Legal Docs — Devior
+# Legal Docs — Islomov Odilhon Rustamovich
 
-A central GitHub Pages site hosting **privacy policies** and **terms of service** for all Devior applications.
+A central GitHub Pages site hosting **privacy policies** and **terms of service** for all applications by Islomov Odilhon Rustamovich.
 
 🔗 **Live site:** [https://odilhon85.github.io/legal-docs/](https://odilhon85.github.io/legal-docs/)
 
@@ -75,6 +75,6 @@ The landing page will automatically show the new card. Done!
 
 ## 📬 Contact
 
-- **Developer:** Devior
+- **Developer:** Islomov Odilhon Rustamovich
 - **Email:** odilhon1985@gmail.com
 - **Telegram:** [@devioruz](https://t.me/devioruz)
