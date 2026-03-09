@@ -76,10 +76,14 @@
         })
         .join('');
 
+      const iconContent = project.logo
+        ? `<img src="${project.logo}" alt="${project.name} logo">`
+        : project.icon;
+
       card.innerHTML = `
         <div class="project-card__header">
-          <div class="project-card__icon" style="background: ${project.color}">
-            ${project.icon}
+          <div class="project-card__icon" style="background: ${project.logo ? 'transparent' : project.color}">
+            ${iconContent}
           </div>
           <h2 class="project-card__name">${project.name}</h2>
         </div>

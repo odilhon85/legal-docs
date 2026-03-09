@@ -32,9 +32,24 @@ const projects = [
       "Offline-first Islamic audio player for Android with Quran radio, equalizer, visualizer, and a one-time premium upgrade.",
     icon: "🎵",
     color: "#1B5E20",
+    logo: "assets/logos/map.png",   // optional — path to app logo image
     links: [
       { label: "Privacy Policy", url: "map/privacy-policy.html" },
       { label: "Terms of Service", url: "map/terms.html" },
+    ],
+  },
+
+  {
+    name: "QarzDaftar",
+    slug: "qarzdaftar",
+    description:
+      "Privacy-first personal debt & loan tracker with Google Drive backup, shared ledger, export to Excel/PDF, and biometric lock.",
+    icon: "📒",
+    color: "#1565c0",
+    logo: "assets/logos/qarzdaftar.png",
+    links: [
+      { label: "Privacy Policy", url: "qarzdaftar/privacy-policy.html" },
+      { label: "Terms of Use", url: "qarzdaftar/terms.html" },
     ],
   },
 
@@ -45,6 +60,7 @@ const projects = [
   //   description: "Brief description of the app.",
   //   icon: "📱",
   //   color: "#2563eb",
+  //   logo: "assets/logos/another-app.png",
   //   links: [
   //     { label: "Privacy Policy", url: "another-app/privacy-policy.html" },
   //     { label: "Terms of Service", url: "another-app/terms.html" },

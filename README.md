@@ -69,9 +69,10 @@ The landing page will automatically show the new card. Done!
 
 ## 📄 Current Projects
 
-| Project | Privacy Policy | Terms of Service |
-|---------|---------------|-----------------|
+| Project | Privacy Policy | Terms |
+|---------|---------------|-------|
 | MAP — Muslim Audio Player | [View](map/privacy-policy.html) | [View](map/terms.html) |
+| QarzDaftar | [View](qarzdaftar/privacy-policy.html) | [View](qarzdaftar/terms.html) |
 
 ## 📬 Contact
 
