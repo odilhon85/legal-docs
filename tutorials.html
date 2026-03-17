@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorials</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── Header ─── -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-header__title">Tutorials</h1>
+      <p class="site-header__subtitle">
+        Video guides and walkthroughs for our applications. Select an app to get started.
+      </p>
+    </div>
+  </header>
+
+  <!-- ─── App Cards ─── -->
+  <main class="container">
+    <div class="projects-grid" id="tutorials-hub-grid"></div>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Islomov Odilhon Rustamovich.
+  </footer>
+
+  <!-- ─── Scripts ─── -->
+  <script src="tutorials.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const grid = document.getElementById('tutorials-hub-grid');
+
+    tutorialApps.forEach((app) => {
+      const videoCount = app.videos.length;
+      const countText = videoCount === 0
+        ? 'Coming soon'
+        : `${videoCount} tutorial${videoCount !== 1 ? 's' : ''}`;
+
+      const card = document.createElement('a');
+      card.href = app.page;
+      card.className = 'project-card';
+      card.style.textDecoration = 'none';
+      card.style.color = 'inherit';
+
+      const hasLogo = app.logo && app.logo.replace('../', '');
+      const iconContent = hasLogo
+        ? `<img src="${app.logo.replace('../', '')}" alt="${app.name} logo">`
+        : app.icon;
+      const iconBg = hasLogo ? 'transparent' : app.color;
+
+      card.innerHTML = `
+        <div class="project-card__header">
+          <div class="project-card__icon" style="background: ${iconBg}">
+            ${iconContent}
+          </div>
+          <h2 class="project-card__name">${app.name}</h2>
+        </div>
+        <p class="project-card__description">${app.description}</p>
+        <div class="project-card__links">
+          <span class="project-card__link project-card__link--primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            ${countText}
+          </span>
+        </div>
+      `;
+
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

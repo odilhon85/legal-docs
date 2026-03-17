@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QarzDaftar Tutorials</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="page-nav container">
+    <a href="../tutorials.html" class="page-nav__back">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      All Tutorials
+    </a>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <header class="page-hero container">
+    <span class="page-hero__badge" style="background:#1565c0;">📒 QarzDaftar</span>
+    <h1 class="page-hero__title">QarzDaftar Tutorials</h1>
+    <p class="page-hero__project">Personal Debt &amp; Loan Tracker — Video Guides</p>
+  </header>
+
+  <!-- ─── Tutorial Videos ─── -->
+  <main class="container">
+    <div class="tutorials-grid" id="tutorials-grid"></div>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Islomov Odilhon Rustamovich.
+  </footer>
+
+  <!-- ─── Scripts ─── -->
+  <script src="../tutorials.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const app = getTutorialsBySlug('qarzdaftar');
+    const grid = document.getElementById('tutorials-grid');
+
+    if (!app || app.videos.length === 0) {
+      grid.innerHTML = '<p class="tutorials-empty">Tutorials coming soon. Stay tuned!</p>';
+    } else {
+      app.videos.forEach((video) => {
+        const card = document.createElement('div');
+        card.className = 'tutorial-card';
+        card.innerHTML = `
+          <div class="tutorial-card__video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/${video.youtubeId}"
+              title="${video.title}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="tutorial-card__body">
+            <h3 class="tutorial-card__title">${video.title}</h3>
+            ${video.description ? `<p class="tutorial-card__description">${video.description}</p>` : ''}
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

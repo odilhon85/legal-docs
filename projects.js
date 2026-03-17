@@ -53,17 +53,18 @@ const projects = [
     ],
   },
 
+  {
+    name: "MediCalculator",
+    slug: "medicalculator",
+    description:
+      "Offline medical calculator for Android with calculation history, favorites, ads removal option, and dark mode.",
+    icon: "🩺",
+    color: "#1565c0",
+    logo: "assets/logos/medicalculator.png",
+    links: [
+      { label: "Privacy Policy", url: "medicalculator/privacy-policy.html" },
+    ],
+  },
+
   // ── Add more projects below ──────────────────────────────
-  // {
-  //   name: "Another App",
-  //   slug: "another-app",
-  //   description: "Brief description of the app.",
-  //   icon: "📱",
-  //   color: "#2563eb",
-  //   logo: "assets/logos/another-app.png",
-  //   links: [
-  //     { label: "Privacy Policy", url: "another-app/privacy-policy.html" },
-  //     { label: "Terms of Service", url: "another-app/terms.html" },
-  //   ],
-  // },
 ];

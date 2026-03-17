@@ -411,3 +411,79 @@ img {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+/* ---------- Tutorials ---------- */
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 4rem;
+}
+
+.tutorial-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition);
+  box-shadow: var(--shadow-card);
+}
+
+.tutorial-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.tutorial-card__video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+}
+
+.tutorial-card__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.tutorial-card__body {
+  padding: 1.15rem 1.25rem;
+}
+
+.tutorial-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.tutorial-card__description {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.tutorials-empty {
+  text-align: center;
+  color: var(--color-text-secondary);
+  padding: 3rem 1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .tutorials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0 3rem;
+  }
+
+  .tutorial-card__body {
+    padding: 1rem;
+  }
+}
