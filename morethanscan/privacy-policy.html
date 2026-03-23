@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MoreThanScan</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --bg: #ffffff;
+            --bg-section: #f8f9fa;
+            --border: #dadce0;
+            --accent: #e8f0fe;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #8ab4f8;
+                --text: #e8eaed;
+                --text-secondary: #9aa0a6;
+                --bg: #202124;
+                --bg-section: #292a2d;
+                --border: #3c4043;
+                --accent: #1a3a5c;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                padding: 40px 32px 64px;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .effective-date {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--text);
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text);
+        }
+
+        ul, ol {
+            margin-bottom: 14px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background-color: var(--bg-section);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.95rem;
+            overflow-x: auto;
+            display: block;
+        }
+
+        @media (min-width: 600px) {
+            .data-table {
+                display: table;
+            }
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        .data-table th {
+            background-color: var(--bg-section);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .data-table tr:nth-child(even) {
+            background-color: var(--bg-section);
+        }
+
+        .toc {
+            background-color: var(--bg-section);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 32px;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            border-bottom: none;
+            font-size: 1.1rem;
+        }
+
+        .toc ol {
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 4px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            vertical-align: middle;
+        }
+
+        .badge-local {
+            background-color: #e6f4ea;
+            color: #137333;
+        }
+
+        .badge-cloud {
+            background-color: #fce8e6;
+            color: #c5221f;
+        }
+
+        .badge-optional {
+            background-color: #e8f0fe;
+            color: #1967d2;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .badge-local {
+                background-color: #1b3d2a;
+                color: #81c995;
+            }
+            .badge-cloud {
+                background-color: #3d1f1e;
+                color: #f28b82;
+            }
+            .badge-optional {
+                background-color: #1a3a5c;
+                color: #8ab4f8;
+            }
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective Date: July 1, 2025 &nbsp;|&nbsp; Last Updated: July 1, 2025</p>
+
+    <p>
+        Islomov Odilxon Rustamovich ("Developer," "we," "us," or "our") built <strong>MoreThanScan</strong> ("App") as 
+        an ad-supported and in-app-purchase-supported Android application. This Privacy Policy explains how we collect, 
+        use, disclose, and safeguard your information when you use the App. Please read this policy carefully. By using 
+        the App, you agree to the collection and use of information in accordance with this policy.
+    </p>
+
+    <nav class="toc">
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#information-we-collect">Information We Collect</a></li>
+            <li><a href="#how-we-use-information">How We Use Your Information</a></li>
+            <li><a href="#third-party-services">Third-Party Services</a></li>
+            <li><a href="#advertising">Advertising</a></li>
+            <li><a href="#google-sign-in-and-drive">Google Sign-In &amp; Google Drive</a></li>
+            <li><a href="#camera-and-image-data">Camera &amp; Image Data</a></li>
+            <li><a href="#ocr-and-text-recognition">OCR &amp; Text Recognition</a></li>
+            <li><a href="#in-app-purchases">In-App Purchases</a></li>
+            <li><a href="#data-storage-and-security">Data Storage &amp; Security</a></li>
+            <li><a href="#permissions">App Permissions</a></li>
+            <li><a href="#data-retention">Data Retention</a></li>
+            <li><a href="#data-sharing">Data Sharing &amp; Disclosure</a></li>
+            <li><a href="#childrens-privacy">Children's Privacy</a></li>
+            <li><a href="#your-rights">Your Rights &amp; Choices</a></li>
+            <li><a href="#international-users">International Users</a></li>
+            <li><a href="#changes">Changes to This Privacy Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ol>
+    </nav>
+
+    <!-- ================================================================ -->
+    <h2 id="information-we-collect">1. Information We Collect</h2>
+
+    <p>We categorize the information associated with the App into the following types:</p>
+
+    <h3>1.1 Information You Provide Directly</h3>
+    <ul>
+        <li><strong>Google Account Information</strong> <span class="badge badge-optional">Optional</span> — If you choose to sign in with Google to use cloud backup features, we receive your Google account email address through the Google Sign-In API.</li>
+        <li><strong>Scanned Documents</strong> — Images, PDFs, and text extracted from documents you scan using the App.</li>
+        <li><strong>User-Created Content</strong> — QR codes, barcodes, document annotations, signatures, and exported files you create within the App.</li>
+        <li><strong>Feedback Emails</strong> — If you contact us via email, we receive your email address and the content of your message.</li>
+    </ul>
+
+    <h3>1.2 Information Collected Automatically</h3>
+    <ul>
+        <li><strong>Analytics Data</strong> — We use Firebase Analytics to collect usage data such as feature usage events (e.g., scans completed, exports performed, filters applied), screen views, and app interactions. This data is collected in an aggregated, anonymized form.</li>
+        <li><strong>Crash Reports</strong> — We use Firebase Crashlytics to collect crash logs, stack traces, and device state information when the App encounters an error. Crashlytics is disabled in debug builds and only active in production releases.</li>
+        <li><strong>Advertising Data</strong> — Google AdMob may collect device identifiers, IP address, and interaction data to serve and measure advertisements. See <a href="#advertising">Section 4: Advertising</a> for details.</li>
+    </ul>
+
+    <h3>1.3 Information We Do NOT Collect</h3>
+    <div class="highlight-box">
+        <ul>
+            <li>We do <strong>not</strong> collect your name, phone number, or physical address.</li>
+            <li>We do <strong>not</strong> collect precise or coarse location data.</li>
+            <li>We do <strong>not</strong> access or read your contacts.</li>
+            <li>We do <strong>not</strong> record audio or access your microphone.</li>
+            <li>We do <strong>not</strong> track you across other apps or websites.</li>
+            <li>We do <strong>not</strong> sell your personal data to any third party.</li>
+        </ul>
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="how-we-use-information">2. How We Use Your Information</h2>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Purpose</th>
+                <th>Processing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Scanned images &amp; documents</td>
+                <td>Document scanning, image processing, PDF creation</td>
+                <td><span class="badge badge-local">On-Device</span></td>
+            </tr>
+            <tr>
+                <td>OCR text</td>
+                <td>Text extraction, search, document indexing</td>
+                <td><span class="badge badge-local">On-Device</span></td>
+            </tr>
+            <tr>
+                <td>Google account email</td>
+                <td>Authentication for cloud backup via Google Drive</td>
+                <td><span class="badge badge-cloud">Cloud</span> <span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+                <td>PDF documents</td>
+                <td>Cloud backup to your Google Drive (user-initiated)</td>
+                <td><span class="badge badge-cloud">Cloud</span> <span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+                <td>Usage analytics</td>
+                <td>Improve app features, understand usage patterns</td>
+                <td><span class="badge badge-cloud">Cloud</span></td>
+            </tr>
+            <tr>
+                <td>Crash reports</td>
+                <td>Identify and fix bugs, improve stability</td>
+                <td><span class="badge badge-cloud">Cloud</span></td>
+            </tr>
+            <tr>
+                <td>Ad interaction data</td>
+                <td>Serve and measure advertisements</td>
+                <td><span class="badge badge-cloud">Cloud</span></td>
+            </tr>
+            <tr>
+                <td>Purchase data</td>
+                <td>Process in-app purchases, verify license status</td>
+                <td><span class="badge badge-cloud">Cloud</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ================================================================ -->
+    <h2 id="third-party-services">3. Third-Party Services</h2>
+
+    <p>The App uses the following third-party services, each of which has its own privacy policy governing the use of your information:</p>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Provider</th>
+                <th>Purpose</th>
+                <th>Privacy Policy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Firebase Analytics</td>
+                <td>Google LLC</td>
+                <td>Usage analytics &amp; event tracking</td>
+                <td><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Firebase Crashlytics</td>
+                <td>Google LLC</td>
+                <td>Crash reporting &amp; error logging</td>
+                <td><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>Google LLC</td>
+                <td>Advertising</td>
+                <td><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Google Sign-In</td>
+                <td>Google LLC</td>
+                <td>Authentication</td>
+                <td><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Google Drive API</td>
+                <td>Google LLC</td>
+                <td>Cloud document backup</td>
+                <td><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Google ML Kit</td>
+                <td>Google LLC</td>
+                <td>On-device text recognition &amp; barcode scanning</td>
+                <td><a href="https://developers.google.com/ml-kit/terms" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td>Google Play Billing</td>
+                <td>Google LLC</td>
+                <td>In-app purchase processing</td>
+                <td><a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Link</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ================================================================ -->
+    <h2 id="advertising">4. Advertising</h2>
+
+    <p>
+        The App displays advertisements provided by <strong>Google AdMob</strong> to support free access to app features. 
+        The following ad formats are used:
+    </p>
+    <ul>
+        <li><strong>Banner Ads</strong> — Displayed at the bottom of certain screens.</li>
+        <li><strong>Interstitial Ads</strong> — Full-screen ads shown periodically between actions (with a minimum 60-second cooldown).</li>
+        <li><strong>Native Ads</strong> — Ads integrated into document lists, clearly labeled as "Ad."</li>
+        <li><strong>App Open Ads</strong> — Displayed when the App returns to the foreground (with a 4-hour cooldown).</li>
+    </ul>
+
+    <h3>4.1 Data Collected by AdMob</h3>
+    <p>Google AdMob may collect and process the following data to serve personalized or non-personalized ads:</p>
+    <ul>
+        <li>Device identifiers (e.g., Android Advertising ID)</li>
+        <li>IP address</li>
+        <li>Device information (model, OS version, screen size)</li>
+        <li>Ad interaction data (impressions, clicks)</li>
+        <li>App usage data</li>
+    </ul>
+    <p>
+        For more information on how Google uses data from apps that use its services, visit: 
+        <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">How Google uses information from sites or apps that use our services</a>.
+    </p>
+
+    <h3>4.2 Ad-Free Experience</h3>
+    <p>
+        You can remove all advertisements by purchasing the <strong>Pro upgrade</strong> (one-time in-app purchase). 
+        Once the Pro upgrade is purchased, no ad-related data will be collected by AdMob.
+    </p>
+
+    <h3>4.3 Ad Personalization</h3>
+    <p>
+        You can opt out of personalized advertising by adjusting your device settings:
+    </p>
+    <ul>
+        <li>Go to <strong>Settings &gt; Google &gt; Ads</strong> on your Android device.</li>
+        <li>Enable <strong>"Opt out of Ads Personalization"</strong> (or <strong>"Delete advertising ID"</strong> on Android 12+).</li>
+    </ul>
+
+    <!-- ================================================================ -->
+    <h2 id="google-sign-in-and-drive">5. Google Sign-In &amp; Google Drive</h2>
+
+    <h3>5.1 Google Sign-In</h3>
+    <p>
+        The App offers <strong>optional</strong> Google Sign-In to enable cloud backup features. When you sign in, we request 
+        access to the following:
+    </p>
+    <ul>
+        <li><strong>Email address</strong> — Used solely to identify your account within the App and display it in settings.</li>
+        <li><strong>Google Drive file scope</strong> (<code>drive.file</code>) — A restricted scope that limits our access to <em>only</em> files created by the App. We cannot access any other files in your Google Drive.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <strong>Important:</strong> We use the most restrictive Google Drive scope available (<code>drive.file</code>). 
+        The App can only read, write, and manage files that it has created in a dedicated "MoreThanScan" folder within 
+        your Google Drive. We have no access to your other Drive files, folders, or shared drives.
+    </div>
+
+    <h3>5.2 Google Drive Usage</h3>
+    <p>If you enable cloud backup, the App will:</p>
+    <ul>
+        <li>Create a dedicated folder named <strong>"MoreThanScan"</strong> in your Google Drive.</li>
+        <li>Upload scanned PDF documents to this folder (manually or via automatic backup).</li>
+        <li>Download your backed-up documents for restoration.</li>
+        <li>Optionally compress documents before upload.</li>
+        <li>Optionally restrict uploads to Wi-Fi connections only.</li>
+    </ul>
+    <p>
+        Automatic backup, if enabled, runs approximately every 6 hours using Android WorkManager and operates 
+        in the background with a persistent notification.
+    </p>
+
+    <h3>5.3 Revoking Access</h3>
+    <p>You can disconnect your Google account and revoke Drive access at any time from within the App's settings. You may also revoke access directly at <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer" target="_blank">Google Account Permissions</a>.</p>
+
+    <!-- ================================================================ -->
+    <h2 id="camera-and-image-data">6. Camera &amp; Image Data</h2>
+
+    <p>The App requires camera access to perform its core function of document scanning.</p>
+
+    <h3>6.1 How Camera Data Is Used</h3>
+    <ul>
+        <li><strong>Live Preview</strong> — Camera frames are processed in real-time for document edge detection and auto-capture. This processing is performed entirely on-device using OpenCV.</li>
+        <li><strong>Image Capture</strong> — When you capture a document, the image is saved locally in JPEG format in the App's private internal storage.</li>
+        <li><strong>Image Processing</strong> — All image operations (perspective correction, cropping, filtering, enhancement) are performed locally on your device. <strong>No images are sent to any server</strong> unless you explicitly choose to upload them to Google Drive.</li>
+    </ul>
+
+    <h3>6.2 Photo Library Access</h3>
+    <p>
+        The App may request access to your device's photo library to allow importing existing images for scanning. 
+        This access is only used when you explicitly choose to import an image. On Android 13 and above, the App uses 
+        the <code>READ_MEDIA_IMAGES</code> permission; on older versions, <code>READ_EXTERNAL_STORAGE</code> is used.
+    </p>
+
+    <!-- ================================================================ -->
+    <h2 id="ocr-and-text-recognition">7. OCR &amp; Text Recognition</h2>
+
+    <div class="highlight-box">
+        <strong>All text recognition is performed entirely on your device.</strong> No document text, images, or OCR 
+        results are sent to any external server for processing.
+    </div>
+
+    <p>The App uses <strong>Google ML Kit</strong> for on-device text recognition, supporting the following scripts:</p>
+    <ul>
+        <li>Latin (English and other Latin-script languages)</li>
+        <li>Chinese</li>
+        <li>Japanese</li>
+        <li>Korean</li>
+        <li>Devanagari (Hindi, Sanskrit, etc.)</li>
+    </ul>
+
+    <p>ML Kit models are downloaded to your device on first use. Once downloaded, text recognition works fully offline without any network connection.</p>
+
+    <p>Similarly, <strong>barcode and QR code scanning</strong> using ML Kit is performed entirely on-device.</p>
+
+    <!-- ================================================================ -->
+    <h2 id="in-app-purchases">8. In-App Purchases</h2>
+
+    <p>The App offers a one-time <strong>Pro upgrade</strong> purchase through <strong>Google Play Billing</strong>. When you make a purchase:</p>
+    <ul>
+        <li>The transaction is processed entirely by Google Play. We do not collect or store your payment information (credit card numbers, billing address, etc.).</li>
+        <li>We receive a purchase token from Google Play to verify your Pro status.</li>
+        <li>Your Pro status is stored locally on your device and can be restored via the "Restore Purchases" feature.</li>
+    </ul>
+
+    <!-- ================================================================ -->
+    <h2 id="data-storage-and-security">9. Data Storage &amp; Security</h2>
+
+    <h3>9.1 Local Storage</h3>
+    <p>Your scanned documents, images, OCR text, and app settings are stored locally on your device in the App's private internal storage directory. This data is not accessible to other apps.</p>
+
+    <p>The App uses:</p>
+    <ul>
+        <li><strong>Encrypted Database</strong> — Document metadata is stored in an encrypted Room database using Android Security Crypto library (<code>androidx.security:security-crypto</code>).</li>
+        <li><strong>Private File Storage</strong> — Scanned images and exported files are stored in the App's internal file directory (<code>filesDir</code>), which is sandboxed by the Android operating system.</li>
+        <li><strong>Encrypted Preferences</strong> — App settings are stored using Android DataStore with encryption support.</li>
+    </ul>
+
+    <h3>9.2 Document Password Protection</h3>
+    <p>
+        The App allows you to set a password on individual documents. Passwords are securely hashed before storage — 
+        the original password text is never stored.
+    </p>
+
+    <h3>9.3 Cloud Storage</h3>
+    <p>
+        If you choose to use Google Drive backup, your documents are stored in your own Google Drive account under a 
+        dedicated "MoreThanScan" folder. The security of this data is governed by 
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a> 
+        and your Google account security settings.
+    </p>
+
+    <h3>9.4 Security Measures</h3>
+    <ul>
+        <li>All network communications use HTTPS/TLS encryption.</li>
+        <li>Google Sign-In uses industry-standard OAuth 2.0 protocol.</li>
+        <li>Local database is encrypted using Android Keystore-backed encryption keys.</li>
+        <li>The App supports biometric authentication for additional protection.</li>
+    </ul>
+
+    <!-- ================================================================ -->
+    <h2 id="permissions">10. App Permissions</h2>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+                <th>Required</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camera</td>
+                <td>Document scanning, QR/barcode scanning</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Internet</td>
+                <td>Cloud backup, Firebase services, Google Sign-In, ads</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Network State</td>
+                <td>Check network availability before cloud operations</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Read Media Images (Android 13+)</td>
+                <td>Import photos from gallery for scanning</td>
+                <td>No (requested when needed)</td>
+            </tr>
+            <tr>
+                <td>Read/Write External Storage (older Android)</td>
+                <td>Import/export documents on older Android versions</td>
+                <td>No (requested when needed)</td>
+            </tr>
+            <tr>
+                <td>Wi-Fi State</td>
+                <td>Wi-Fi-only backup setting, QR Wi-Fi connect</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Biometric</td>
+                <td>Optional biometric app lock</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Vibrate</td>
+                <td>Haptic feedback during scanning</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Post Notifications (Android 13+)</td>
+                <td>Cloud sync progress notifications</td>
+                <td>No (requested when needed)</td>
+            </tr>
+            <tr>
+                <td>Foreground Service</td>
+                <td>Background document upload to Google Drive</td>
+                <td>Yes (when using cloud backup)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ================================================================ -->
+    <h2 id="data-retention">11. Data Retention</h2>
+
+    <ul>
+        <li><strong>Local Data</strong> — Your scanned documents and app data remain on your device until you delete them within the App or uninstall the App. Uninstalling the App removes all locally stored data.</li>
+        <li><strong>Google Drive Data</strong> — Documents backed up to Google Drive persist in your Drive account even after uninstalling the App. You can manage or delete these files directly from Google Drive.</li>
+        <li><strong>Firebase Analytics</strong> — Analytics data is retained according to <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Firebase's data retention policies</a> (default: 14 months for event data, 60 days for user-level data).</li>
+        <li><strong>Firebase Crashlytics</strong> — Crash data is retained for 90 days.</li>
+        <li><strong>AdMob Data</strong> — Advertising data is retained according to <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>.</li>
+    </ul>
+
+    <!-- ================================================================ -->
+    <h2 id="data-sharing">12. Data Sharing &amp; Disclosure</h2>
+
+    <p><strong>We do not sell, trade, or rent your personal data to third parties.</strong></p>
+
+    <p>Information may be shared with third parties only in the following limited circumstances:</p>
+
+    <ul>
+        <li><strong>Google Services</strong> — As described in this policy, aggregated analytics data, crash reports, and ad interaction data are processed by Google through Firebase and AdMob. Usage of these services is governed by Google's privacy policies.</li>
+        <li><strong>Google Drive</strong> — Only when you explicitly sign in and choose to backup documents. Documents are stored in your own Google Drive account.</li>
+        <li><strong>User-Initiated Sharing</strong> — When you use the App's share feature to send documents via email, messaging apps, or other installed apps on your device, the shared content is transmitted directly to the chosen app. We do not intercept or store this data.</li>
+        <li><strong>Legal Requirements</strong> — We may disclose information if required by law, court order, or government regulation.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <strong>Google API Services User Data Policy:</strong> MoreThanScan's use and transfer to any other app of information 
+        received from Google APIs will adhere to the 
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer" target="_blank">Google API Services User Data Policy</a>, 
+        including the Limited Use requirements.
+    </div>
+
+    <!-- ================================================================ -->
+    <h2 id="childrens-privacy">13. Children's Privacy</h2>
+
+    <p>
+        The App is not directed at children under the age of 13. We do not knowingly collect personal information from 
+        children under 13. If you are a parent or guardian and believe your child has provided us with personal information, 
+        please contact us at the email address below, and we will take steps to delete such information.
+    </p>
+
+    <!-- ================================================================ -->
+    <h2 id="your-rights">14. Your Rights &amp; Choices</h2>
+
+    <p>You have the following rights regarding your data:</p>
+
+    <ul>
+        <li><strong>Access &amp; Deletion</strong> — All your scanned documents and data are stored on your device. You can view, export, or delete them at any time from within the App.</li>
+        <li><strong>Google Account Disconnection</strong> — You can sign out and revoke Google Drive access at any time from the App's settings or from your <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer" target="_blank">Google Account Permissions</a> page.</li>
+        <li><strong>Ad Personalization</strong> — You can opt out of personalized ads via your Android device settings (Settings &gt; Google &gt; Ads).</li>
+        <li><strong>Analytics Opt-Out</strong> — You can limit data collection by disabling analytics through your device's Google settings.</li>
+        <li><strong>Uninstall</strong> — Uninstalling the App removes all locally stored data, including the database, scanned images, and cached files.</li>
+    </ul>
+
+    <h3>For EEA/UK Users (GDPR)</h3>
+    <p>
+        If you are located in the European Economic Area or the United Kingdom, you have additional rights under the 
+        General Data Protection Regulation (GDPR), including the right to access, rectify, port, and erase your data, 
+        as well as the right to restrict or object to certain processing. To exercise these rights, contact us at the 
+        email address provided below.
+    </p>
+
+    <h3>For California Users (CCPA)</h3>
+    <p>
+        If you are a California resident, you have the right to know what personal information is collected, request 
+        deletion of your personal information, and opt out of the sale of your personal information. We do not sell 
+        personal information. To exercise your rights, contact us at the email address provided below.
+    </p>
+
+    <!-- ================================================================ -->
+    <h2 id="international-users">15. International Users</h2>
+
+    <p>
+        The App may be used worldwide. By using the App, you consent to the transfer and processing of your information 
+        in accordance with this Privacy Policy. Data processed by Google services (Firebase, AdMob, Google Drive) may be 
+        stored on Google's servers located in various countries. Please refer to 
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a> 
+        for information about their data transfer practices.
+    </p>
+
+    <!-- ================================================================ -->
+    <h2 id="changes">16. Changes to This Privacy Policy</h2>
+
+    <p>
+        We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top 
+        of this page. We encourage you to review this Privacy Policy periodically. Your continued use of the App after any 
+        changes indicates your acceptance of the updated policy. For significant changes, we will provide a notice within the 
+        App or through other appropriate means.
+    </p>
+
+    <!-- ================================================================ -->
+    <h2 id="contact">17. Contact Us</h2>
+
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+
+    <div class="highlight-box">
+        <strong>Developer:</strong> Islomov Odilxon Rustamovich<br>
+        <strong>Email:</strong> <a href="mailto:odilhon1985@gmail.com">odilhon1985@gmail.com</a><br>
+        <strong>App:</strong> MoreThanScan
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Islomov Odilxon Rustamovich. All rights reserved.</p>
+        <p>This privacy policy applies to the MoreThanScan Android application available on Google Play Store.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

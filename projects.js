@@ -66,5 +66,18 @@ const projects = [
     ],
   },
 
+  {
+    name: "MoreThanScan",
+    slug: "morethanscan",
+    description:
+      "Ad-supported document scanner for Android with OCR, Google Drive backup, QR/barcode scanning, and a one-time Pro upgrade.",
+    icon: "📷",
+    color: "#1a73e8",
+    logo: "assets/logos/scan.png",
+    links: [
+      { label: "Privacy Policy", url: "morethanscan/privacy-policy.html" },
+    ],
+  },
+
   // ── Add more projects below ──────────────────────────────
 ];
