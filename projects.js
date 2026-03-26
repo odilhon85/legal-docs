@@ -79,5 +79,18 @@ const projects = [
     ],
   },
 
+  {
+    name: "Tasbeh",
+    slug: "tasbeh",
+    description:
+      "Offline tasbeh (dhikr counter) app for Android with custom zikr entries, haptic feedback, themes, and loop statistics.",
+    icon: "📿",
+    color: "#2E7D32",
+    logo: "assets/logos/tasbeh.png",
+    links: [
+      { label: "Privacy Policy", url: "tasbeh/privacy-policy.html" },
+    ],
+  },
+
   // ── Add more projects below ──────────────────────────────
 ];
