@@ -52,12 +52,21 @@ const tutorialApps = [
     logo: "../assets/logos/qarzdaftar.png",
     page: "tutorials/qarzdaftar.html",
     videos: [
-      // Add QarzDaftar tutorials here:
-      // {
-      //   title: "Getting Started with QarzDaftar",
-      //   description: "Learn the basics of debt tracking.",
-      //   youtubeId: "YOUR_YOUTUBE_VIDEO_ID"
-      // },
+      {
+        title: "Qarz Daftar #1",
+        description: "Umumiy ko'rinish va sozlamalar | Overview and Settings | Обзор и настройки",
+        youtubeId: "Bw4rSLz2SvU"
+      },
+      {
+        title: "Qarz Daftar #2",
+        description: "Hisoblar, tranzaksiyalar va eksport | Accounts, Transactions, and Export | Счета, транзакции и экспорт",
+        youtubeId: "fm4E_e-0oTo"
+      },
+      {
+        title: "Qarz Daftar #3",
+        description: "Bulutga sinxronlash va tiklash | Cloud Backup and Restore | Облачное резервное копирование и восстановление",
+        youtubeId: "leJDQyB5kcU"
+      },
     ],
   },
 
