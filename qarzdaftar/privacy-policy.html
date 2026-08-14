@@ -205,10 +205,10 @@
     <li>Download previously backed-up data when you choose to restore</li>
 </ul>
 <p>
-    The App requests <strong>broad Google Drive access</strong> (the <code>drive</code> scope) because the Shared Ledger
-    feature requires creating shared folders that both you and your partner's device can access.
-    The standard app-only scope does not support cross-user folder sharing.
-    Despite having broad access, the App <strong>only</strong> accesses files and folders it has created
+    The App uses a <strong>limited (file-level) Google Drive scope</strong>. This means:
+    We only access files and folders created by QarzDaftar or explicitly chosen via the file picker.
+    For the Shared Ledger feature, we create shared folders that both you and your partner's device can access.
+    Despite this limited access, the App <strong>only</strong> accesses files and folders it has created
     (the "QarzDaftar" folder and its contents). It does <strong>not</strong> read, modify, or delete any other files
     on your Google Drive. You can revoke access at any time via
     <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>.
@@ -234,6 +234,10 @@
 <p>
     You can disconnect a shared ledger at any time. Upon disconnection, the shared folder remains on Google Drive
     but no further synchronization occurs.
+</p>
+<p>
+    <strong>Important: Shared data deletion risk.</strong>
+    Shared ledger data is stored in a shared Google Drive folder. If the user who created the shared ledger deletes all files from this folder or removes the folder itself, both users may lose their synchronized transaction history for that account.
 </p>
 
 <h2>5. Camera and Contacts Permissions</h2>
@@ -280,10 +284,10 @@
     QarzDaftar uses a <strong>freemium model</strong>:
 </p>
 <ul>
-    <li><strong>Free tier</strong> — Core features are free forever: unlimited transactions, up to 5 accounts,
-        balance tracking, dashboard, search, templates, groups, primary currency, PIN/biometric lock</li>
-    <li><strong>Pro subscription</strong> — Optional paid upgrade ($1.99/month or $9.99/year) for cloud sync via
-        Google Drive, shared ledgers, multi-currency, PDF &amp; Excel export, and unlimited accounts</li>
+    <li><strong>Free tier</strong> — All core features are available, including shared ledger,
+        Google Drive backup/sync, multi-currency support, and PDF/Excel export. Up to 5 accounts allowed; additional accounts require Pro subscription.</li>
+    <li><strong>Pro subscription</strong> — Removes the account limit (unlimited accounts). All features included.
+        Optional paid upgrade (.99/month or .99/year).</li>
 </ul>
 <p>
     All payment processing is handled by Google Play Billing. We do not collect, store, or have access to your
