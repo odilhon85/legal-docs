@@ -92,5 +92,19 @@ const projects = [
     ],
   },
 
+  {
+    name: "Buxgalteriya Schyotlari (Schyot)",
+    slug: "schyot",
+    description:
+      "Offline-first educational app for learning accounting terms and provodka with structured modules, tests, an interactive game, and a freemium subscription.",
+    icon: "📘",
+    color: "#1565c0",
+    logo: "assets/logos/schyot.png",
+    links: [
+      { label: "Privacy Policy", url: "schyot/privacy-policy.html" },
+      { label: "Terms of Use", url: "schyot/terms.html" },
+    ],
+  },
+
   // ── Add more projects below ──────────────────────────────
 ];
